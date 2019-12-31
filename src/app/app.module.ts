@@ -8,6 +8,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { NavFooterComponent } from './nav/nav-footer/nav-footer.component';
 import { LoginComponent } from './auth/login/login.component';
 import { RegisterComponent } from './auth/register/register.component';
+import { NavTopComponent } from './nav/nav-top/nav-top.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,11 +18,13 @@ import { RegisterComponent } from './auth/register/register.component';
     DashboardComponent,
     NavFooterComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    NavTopComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
